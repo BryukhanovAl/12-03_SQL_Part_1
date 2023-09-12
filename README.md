@@ -30,6 +30,14 @@
 
 <details>
 
+```
+SELECT DISTINCT district FROM address
+WHERE district LIKE 'K%a' AND district NOT LIKE '% %';
+
+```
+
+![image](https://github.com/Ivashka80/12-03_SQL_Part_1/assets/121082757/2962ebf8-bd89-4368-a333-e4a9c082d3b2)
+
 </details>
 
 ### Задание 2
@@ -40,6 +48,14 @@
 
 <details>
 
+```
+SELECT amount, payment_date FROM payment
+WHERE CAST(payment_date AS DATE) BETWEEN 20050614 AND 20050618 AND amount > 10.00;
+
+```
+
+![image](https://github.com/Ivashka80/12-03_SQL_Part_1/assets/121082757/4a7e2226-f567-423f-b512-8d80f7748dce)
+
 </details>
 
 ### Задание 3
@@ -49,6 +65,14 @@
 ### *Ответ*
 
 <details>
+
+```
+SELECT * FROM rental ORDER BY rental_id DESC
+LIMIT 5;
+
+```
+
+![image](https://github.com/Ivashka80/12-03_SQL_Part_1/assets/121082757/8a033d8c-d05a-4fbb-8f2f-f4365790e76c)
 
 </details>
 
@@ -63,6 +87,14 @@
 ### *Ответ*
 
 <details>
+
+```
+SELECT LOWER(REPLACE(first_name, 'LL', 'PP')) AS Имя, LOWER(last_name) AS Фамилия FROM customer
+WHERE active = 1 AND (first_name LIKE 'Kelly' OR first_name LIKE 'Willie');
+
+```
+
+![image](https://github.com/Ivashka80/12-03_SQL_Part_1/assets/121082757/065c0dbf-0887-429f-ad6c-945f35ca99cc)
 
 </details>
 
