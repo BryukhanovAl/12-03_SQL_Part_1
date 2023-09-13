@@ -49,12 +49,11 @@ WHERE district LIKE 'K%a' AND district NOT LIKE '% %';
 <details>
 
 ```
-SELECT amount, payment_date FROM payment
-WHERE CAST(payment_date AS DATE) BETWEEN 20050614 AND 20050618 AND amount > 10.00;
+SELECT * FROM payment WHERE payment_date BETWEEN '2005-06-15 00:00:00' AND '2005-06-18 23:59:59' AND amount > 10;
 
 ```
 
-![image](https://github.com/Ivashka80/12-03_SQL_Part_1/assets/121082757/4a7e2226-f567-423f-b512-8d80f7748dce)
+![image](https://github.com/Ivashka80/12-03_SQL_Part_1/assets/121082757/12a2e612-714b-4730-b849-3fbc21660e9a)
 
 </details>
 
